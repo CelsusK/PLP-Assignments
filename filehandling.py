@@ -5,7 +5,5 @@ try:
     file.write("JoNas")
     print("New name added, Jonas")
 except FileNotFoundError:
-  print("File not found.Check the filename")
-finally:
-  file.close()
-  
+  print("File not found. Check the filename")
+
