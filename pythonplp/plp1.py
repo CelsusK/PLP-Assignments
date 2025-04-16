@@ -21,15 +21,16 @@
 #     def __init__(self, make, model, year,):
 #         super().__init__(make, model, year)
 
-class Animal:
-    def speak(self):
-        return "Sound"
-class Dog:
-    def speak(self):
-        return "Bark"
-class Cat:
-    def speak(self):
-        return "Meow"
-for animal in (Dog(), Cat()):
-    print(animal.speak()) #Bark Meow        
-            
+# class Animal:
+#     def speak(self):
+#         return "Sound"
+# class Dog:
+#     def speak(self):
+#         return "Bark"
+# class Cat:
+#     def speak(self):
+#         return "Meow"
+# for animal in (Dog(), Cat()):
+#     print(animal.speak()) #Bark Meow        
+#Polymorphism: The ability to present the same interface for different underlying data types. It allows methods to do different things based on the object it is acting upon.
+# It is often implemented through method overriding and operator overloading.
