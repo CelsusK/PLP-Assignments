@@ -5,5 +5,5 @@ def calculate_discount(price, discount_percent):
         return new_price
     else:
         return price
-Price = calculate_discount(100, 4) 
-print(Price) # 80.0
+Price = calculate_discount() 
+print(Price) 

@@ -1,86 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>HTML Lists,Images,Tables,Forms</title>
-    </head>
-    <body>
-        <h1>HTML Lists</h1>
-        <h3>Ordered Lists</h3>
-        <ol>
-            <li>Software Engineering</li>
-            <li>Web Development</li>
-            <li>Python</li>
-            <li>Database</li>
-            <li>Startup Building</li>
-        </ol>
-        <h3>Unordered Lists</h3>
-        <ul>
-            <li>Messi</li>
-            <li>Verstappen</li>
-            <li>Ronaldo</li>
-            <li>Schumacher</li>
-        </ul>
-        <h3>Definition Lists</h3>
-        <dl>
-            <dt>Hamilton</dt>
-            <dd>F1 driver for ferrari</dd>
-            <dt>Ronaldinho</dt>
-            <dd>Played for Barcelona</dd>
-        </dl>
-        <h1>HTML Images</h1>
-        <img src="https://images.pexels.com/photos/29320677/pexels-photo-29320677.jpeg?cs=srgb&dl=pexels-jonathanborba-29320677.jpg&fm=jpg&_gl=1*6tm6c1*_ga*MTY0MDY4NTc1MC4xNzQyMTk4NDc2*_ga_8JE65Q40S6*MTc0MjE5ODQ3Ni4xLjEuMTc0MjE5ODQ4Ny4wLjAuMA.." alt="F1 car" width="150" height="250">
-        <h1>HTML Tables</h1>
-        <table border="1">
-            <caption>Table learning</caption>
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Country</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Kiragu</td>
-                    <td>kiragucassian@gmail.com</td>
-                    <td>Kenya</td>
-                </tr>
-            </tbody> 
-            <tbody>
-                <tr>
-                    <td>Patricia</td>
-                    <td>Patricia@gmail.com</td>
-                    <td>Italy</td>
-                </tr>
-            </tbody> 
-            
-        </table>
-        <h1>HTML Forms</h1>
-            <form action="" method="">
-                <label for="name"></label>
-                <input type="text" id="student_name" name="student_name" required>
-                <br><br>
-                <label for="Gender">Gender:</label>
-                <input type="radio" id="Gender" name="Gender" value="female"> Female
-                <input type="radio" id="Gender" name="Gender" value="Male"> Male
-                <br><br>
-                <label for="hobbies">Hobbies</label>
-                <input type="checkbox" name="hobbies" value="Sports">Sports
-                <input type="checkbox" name="hobbies" value="Music">Music
-                <input type="checkbox" name="hobbies" value="Art">Art
-                <br><br>
-                <label for="country">Country</label>
-                <select name="country" id="country">
-                    <option>--Select Country--</option>
-                    <option value="Nigeria">Nigeria</option>
-                    <option value="Kenya">Kenya</option>
-                    <option value="South Africa">South Africa</option>
-                </select>
-                <br><br>
-                ,<label for="description">Describe yourself:</label>
-                <textarea id="description" name="description"></textarea>
-                <br><br>
-                <button>Register</button>
-            </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassian Celsus Kiragu | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Cassian</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Cassian Kiragu</span></h1>
+            <h2>A Student & Developer Building Digital Experiences</h2>
+            <p>Currently learning Web Technologies, Python, and Startup Building at <span class="highlight">PLP Academy</span>.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Cassian, a passionate student and aspiring full-stack developer based in Kenya. I'm currently mastering:</p>
+                    <ul class="skills">
+                        <li>HTML/CSS/JavaScript</li>
+                        <li>Python & Flask/Django</li>
+                        <li>Databases (SQL, MongoDB)</li>
+                        <li>Startup Fundamentals</li>
+                    </ul>
+                    <p>When I'm not coding, I enjoy contributing to open-source projects and writing tech blogs.</p>
+                    
+                    <h3>My Passion</h3>
+                    <p>
+                        I am passionate about leveraging technology to solve real-world problems and create impactful solutions.
+                        I believe in the power of software to transform industries, improve lives, and drive positive change.
+                    </p>
+        
+                    <h3>What Drives Me</h3>
+                    <p>
+                         I am driven by a desire to continuously learn and grow as a developer. I am excited by challenging projects that
+                         push me outside of my comfort zone and allow me to expand my skillset. I am also motivated by the opportunity to
+                         collaborate with other talented individuals and contribute to meaningful projects.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="kiragu.JPG" alt="Cassian Kiragu">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for internships and collaboration opportunities. Let's build something amazing!  You can view my resume <a href="https://docs.google.com/document/d/1yob4PTt1Cpsqifiw5PnuSFHoMYLOh6i129GcGAaDdbM/edit?usp=sharing" target="_blank">here</a>.</p>
+            <a href="mailto:kiragucassian@gmail.com" class="btn">Email Me</a>
+            <div class="social-links">
+                <a href="https://github.com/CelsusK" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built with ❤️ by Cassian Celsus Kiragu</p>
+    </footer>
+</body>
 </html>
+
